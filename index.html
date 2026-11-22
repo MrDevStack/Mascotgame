@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Login Form | @coding.stella</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <main class="card" id="card">
+
+    <!-- Mascot side -->
+    <section class="stage" id="stage">
+      <span class="stage-chip"><i></i>Meet Mochi</span>
+
+      <svg class="deco deco-1" viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg>
+      <svg class="deco deco-2" viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg>
+      <svg class="deco deco-3" viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg>
+
+      <svg class="buddy" id="buddy" viewBox="0 0 240 240" aria-hidden="true">
+        <defs>
+          <radialGradient id="fur" cx=".35" cy=".28" r=".85">
+            <stop offset="0" stop-color="#ffdcb8"/>
+            <stop offset=".55" stop-color="#ffb985"/>
+            <stop offset="1" stop-color="#ef9461"/>
+          </radialGradient>
+          <radialGradient id="cream" cx=".4" cy=".3" r=".8">
+            <stop offset="0" stop-color="#fffdf9"/>
+            <stop offset="1" stop-color="#ffe6d2"/>
+          </radialGradient>
+          <radialGradient id="pink" cx=".4" cy=".3" r=".8">
+            <stop offset="0" stop-color="#ffd3dc"/>
+            <stop offset="1" stop-color="#ff9fb3"/>
+          </radialGradient>
+          <radialGradient id="gold" cx=".35" cy=".3" r=".8">
+            <stop offset="0" stop-color="#fff4c2"/>
+            <stop offset="1" stop-color="#f3b42c"/>
+          </radialGradient>
+          <radialGradient id="iris" cx=".5" cy=".78" r=".8">
+            <stop offset="0" stop-color="#d98a45"/>
+            <stop offset=".45" stop-color="#5a3024"/>
+            <stop offset="1" stop-color="#26150f"/>
+          </radialGradient>
+          <radialGradient id="yarn" cx=".35" cy=".3" r=".8">
+            <stop offset="0" stop-color="#d4f5e5"/>
+            <stop offset="1" stop-color="#7fd3aa"/>
+          </radialGradient>
+          <linearGradient id="cushion" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffd0c6"/>
+            <stop offset="1" stop-color="#ffa597"/>
+          </linearGradient>
+          <filter id="clay" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#c4683a" flood-opacity=".22"/>
+          </filter>
+          <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="5"/>
+          </filter>
+        </defs>
+
+        <ellipse class="shadow" cx="120" cy="238" rx="96" ry="7"/>
+
+        <path class="sparkle s1" d="M24 58 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"/>
+        <path class="sparkle s2" d="M214 36 l2.5 7.5 7.5 2.5 -7.5 2.5 -2.5 7.5 -2.5 -7.5 -7.5 -2.5 7.5 -2.5z"/>
+        <path class="sparkle s3" d="M222 110 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"/>
+        <path class="sparkle s4" d="M14 132 l2.5 7.5 7.5 2.5 -7.5 2.5 -2.5 7.5 -2.5 -7.5 -7.5 -2.5 7.5 -2.5z"/>
+
+        <!-- Cushion + yarn ball -->
+        <ellipse cx="120" cy="222" rx="92" ry="16" fill="url(#cushion)" filter="url(#clay)"/>
+        <ellipse cx="112" cy="214" rx="66" ry="5" fill="#fff" opacity=".45" filter="url(#soft)"/>
+        <g class="yarn">
+          <path class="yarn-thread" d="M44 222 C62 240 90 238 102 230"/>
+          <circle cx="32" cy="208" r="18" fill="url(#yarn)" filter="url(#clay)"/>
+          <path class="yarn-line" d="M17 202 q15 -10 30 4 M15 211 q17 -8 34 6 M21 221 q12 -6 22 2"/>
+        </g>
+
+        <g class="float">
+          <path class="tail" d="M168 206 C200 208 214 182 206 156 C202 142 212 130 222 132"/>
+
+          <ellipse cx="120" cy="194" rx="60" ry="34" fill="url(#fur)" filter="url(#clay)"/>
+          <ellipse cx="120" cy="198" rx="32" ry="22" fill="url(#cream)"/>
+
+          <!-- Head: .head tilts, .head-inner nods -->
+          <g class="head">
+            <g class="head-inner">
+              <g class="ear ear-l">
+                <path d="M50 100 C44 66 50 40 60 32 C74 36 96 54 106 68Z" fill="url(#fur)" filter="url(#clay)"/>
+                <path d="M60 84 C58 64 62 50 66 46 C74 50 86 60 92 68Z" fill="url(#pink)"/>
+              </g>
+              <g class="ear ear-r">
+                <path d="M190 100 C196 66 190 40 180 32 C166 36 144 54 134 68Z" fill="url(#fur)" filter="url(#clay)"/>
+                <path d="M180 84 C182 64 178 50 174 46 C166 50 154 60 148 68Z" fill="url(#pink)"/>
+              </g>
+
+              <ellipse cx="120" cy="120" rx="80" ry="64" fill="url(#fur)" filter="url(#clay)"/>
+              <ellipse cx="88" cy="82" rx="30" ry="14" fill="#fff" opacity=".45" filter="url(#soft)"/>
+              <path class="stripe" d="M110 58 q2 10 0 16 M120 56 q2 12 0 20 M130 58 q2 10 0 16"/>
+
+              <ellipse cx="106" cy="146" rx="18" ry="13" fill="url(#cream)"/>
+              <ellipse cx="134" cy="146" rx="18" ry="13" fill="url(#cream)"/>
+
+              <g class="whiskers">
+                <path class="whisker" d="M78 142 L52 136 M78 150 L54 154"/>
+                <path class="whisker" d="M162 142 L188 136 M162 150 L186 154"/>
+              </g>
+
+              <ellipse class="cheek" cx="72" cy="132" rx="12" ry="7"/>
+              <ellipse class="cheek" cx="168" cy="132" rx="12" ry="7"/>
+
+              <path class="brow brow-l" d="M82 92 Q92 88 102 92"/>
+              <path class="brow brow-r" d="M138 92 Q148 88 158 92"/>
+
+              <!-- Eyes: .white is the hit-area, .pupil moves, glints stay still -->
+              <g class="eye eye-l" transform="translate(92 116)">
+                <g class="lid">
+                  <circle class="white" r="15"/>
+                  <ellipse class="eyeball" rx="13" ry="15" fill="url(#iris)"/>
+                  <g class="pupil"><ellipse class="core" rx="7" ry="9"/></g>
+                  <ellipse class="eye-rim" rx="13" ry="15"/>
+                  <circle class="glint" cx="4.5" cy="-6" r="4.2"/>
+                  <circle class="glint" cx="-4.5" cy="5.5" r="2"/>
+                  <circle class="glint glint-star" cx="-3" cy="-8" r="1.4"/>
+                  <path class="lash" d="M-11 -8 l-6 -4 M-13 -3 l-6 -1"/>
+                </g>
+                <path class="happy-eye" d="M-11 4 Q0 -11 11 4"/>
+              </g>
+              <g class="eye eye-r" transform="translate(148 116)">
+                <g class="lid">
+                  <circle class="white" r="15"/>
+                  <ellipse class="eyeball" rx="13" ry="15" fill="url(#iris)"/>
+                  <g class="pupil"><ellipse class="core" rx="7" ry="9"/></g>
+                  <ellipse class="eye-rim" rx="13" ry="15"/>
+                  <circle class="glint" cx="4.5" cy="-6" r="4.2"/>
+                  <circle class="glint" cx="-4.5" cy="5.5" r="2"/>
+                  <circle class="glint glint-star" cx="-3" cy="-8" r="1.4"/>
+                  <path class="lash" d="M11 -8 l6 -4 M13 -3 l6 -1"/>
+                </g>
+                <path class="happy-eye" d="M-11 4 Q0 -11 11 4"/>
+              </g>
+
+              <path d="M113 136 Q120 132 127 136 Q124 143 120 144 Q116 143 113 136Z" fill="url(#pink)"/>
+              <path class="mouth" id="mouth" d="M110 152 Q120 156 130 152 Q120 156 110 152Z"/>
+              <path class="sweat" d="M190 96 C184 106 184 112 190 114 C196 112 196 106 190 96Z"/>
+            </g>
+          </g>
+
+          <path class="collar" d="M80 176 Q120 198 160 176"/>
+          <g class="bell">
+            <circle cx="120" cy="195" r="8" fill="url(#gold)" filter="url(#clay)"/>
+            <path class="bell-slit" d="M115 197 h10"/>
+            <circle cx="120" cy="199.5" r="1.6" fill="#c98a1a"/>
+          </g>
+
+          <g class="paw paw-l">
+            <ellipse cx="94" cy="214" rx="22" ry="16" fill="url(#cream)" filter="url(#clay)"/>
+            <path class="toe" d="M87 220 v-6 M94 221 v-7 M101 220 v-6"/>
+          </g>
+          <g class="paw paw-r">
+            <ellipse cx="146" cy="214" rx="22" ry="16" fill="url(#cream)" filter="url(#clay)"/>
+            <path class="toe" d="M139 220 v-6 M146 221 v-7 M153 220 v-6"/>
+          </g>
+
+          <!-- Thumbs up (outer g positions it, inner g animates) -->
+          <g transform="translate(184 140)">
+            <g class="thumb">
+              <rect x="5" y="0" width="12" height="26" rx="6" fill="url(#cream)" filter="url(#clay)"/>
+              <rect x="0" y="16" width="32" height="27" rx="12" fill="url(#cream)" filter="url(#clay)"/>
+              <path class="toe" d="M17 24 h10 M17 32 h10"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+
+      <p class="speech" id="speech">Hi, I'm Mochi! Let's make a strong password.</p>
+    </section>
+
+    <!-- Form side -->
+    <section class="panel">
+      <header>
+        <span class="badge">Secure sign up</span>
+        <h1>Create your account</h1>
+        <p class="sub">Pick a password that even Mochi can't guess.</p>
+      </header>
+
+      <form id="form" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="input-wrap" id="emailWrap">
+            <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <input id="email" type="email" placeholder="you@example.com" autocomplete="email" spellcheck="false">
+            <svg class="ico valid" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-head">
+            <label for="password">Password</label>
+            <button type="button" class="link-btn" id="generate">
+              <svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>
+              Generate
+            </button>
+          </div>
+          <div class="input-wrap" id="pwWrap">
+            <svg class="ico" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            <input id="password" type="password" placeholder="Enter a password" autocomplete="new-password" spellcheck="false">
+            <span class="caps" aria-live="polite">
+              <svg viewBox="0 0 24 24"><path d="M12 4 4 12h4v4h8v-4h4L12 4ZM8 20h8"/></svg>Caps
+            </span>
+            <button type="button" class="toggle" id="toggle" aria-label="Show password" aria-pressed="false">
+              <svg class="i-on" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="i-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c6.5 0 10 7 10 7a17.6 17.6 0 0 1-3.2 4.1M6.6 6.6C3.9 8.4 2 12 2 12s3.5 7 10 7c1.9 0 3.6-.6 5-1.4"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="meter">
+          <div class="meter-track">
+            <span class="seg"><i></i></span><span class="seg"><i></i></span><span class="seg"><i></i></span><span class="seg"><i></i></span>
+          </div>
+          <div class="meter-info">
+            <span class="meter-label" id="label">Start typing</span>
+            <span class="meter-crack" id="crack"></span>
+          </div>
+        </div>
+
+        <ul class="rules" id="rules">
+          <li data-rule="length"><span class="tick"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>8+ characters</li>
+          <li data-rule="lower"><span class="tick"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>Lowercase letter</li>
+          <li data-rule="upper"><span class="tick"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>Uppercase letter</li>
+          <li data-rule="number"><span class="tick"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>Number</li>
+          <li data-rule="symbol"><span class="tick"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>Symbol (!@#$)</li>
+          <li data-rule="common"><span class="tick"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>No common pattern</li>
+        </ul>
+
+        <button type="submit" class="submit" id="submit" disabled>
+          <span class="submit-text">Create account</span>
+          <span class="spinner"></span>
+        </button>
+
+        <p class="signin">Already have an account? <a href="#">Sign in</a></p>
+      </form>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>
+    <span id="toastText"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
